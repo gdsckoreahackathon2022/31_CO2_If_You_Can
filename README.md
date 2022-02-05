@@ -11,6 +11,8 @@
 
 <img width="198" alt="스크린샷 2022-02-05 오전 10 53 32" src="https://user-images.githubusercontent.com/53477646/152624302-520e7b87-e877-4efc-9f8c-5ab01dc79b40.png">
 
+-UN SDGs Climate Action
+
 ## 주요 기능 🪵
 1. 사용자는 자신이 수행했던 행동을 선택합니다.
   - 안드로이드 어플리케이션을 통해 어디서든 입력할 수 있습니다.
