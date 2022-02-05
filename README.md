@@ -9,7 +9,7 @@
 
 그래서 저희 Catch_CO2_If_You_Can 팀은 사람들이 자신의 이산화탄소 배출량을 인지하여 이산화탄소 배출을 조금이라도 줄이는 데 도움을 주고자 합니다.
 
-## 주요 기능
+## 주요 기능 🪵
 1. 사용자는 자신이 수행했던 행동을 선택합니다.
   - 안드로이드 어플리케이션을 통해 어디서든 입력할 수 있습니다.
   - 행동에 따른 CO2 배출량 정보는 미리 저장되어 있습니다.
@@ -21,6 +21,7 @@
   - 사용자는 회원가입을 통해 ID로 구분합니다.
   - 각 사용자는 차트를 통해서 본인의 배출 현황을 확인할 수 있습니다.
  
- ## 사용 기술
+ ## 사용 기술 🦋
  [Server Part] 송지우, 이서연
+ https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.vlpt.us%2Fimages%2Fswhybein%2Fpost%2F69f12139-1b29-4cea-a8a8-26fec32ed6fa%2Fdjango.png&imgrefurl=https%3A%2F%2Fvelog.io%2F%40swhybein%2Fdjango-%25ED%258A%259C%25ED%2586%25A0%25EB%25A6%25AC%25EC%2596%25BC-part1&tbnid=9XXj0GgeVfQqTM&vet=12ahUKEwjZjfvyt-f1AhUR4WEKHcNGAqMQMygDegUIARC7AQ..i&docid=qf6FSfiXOyTuBM&w=700&h=350&q=django&client=safari&ved=2ahUKEwjZjfvyt-f1AhUR4WEKHcNGAqMQMygDegUIARC7AQ
  [Android Part] 양희웅
