@@ -23,6 +23,7 @@
  
  ## 사용 기술 🦋
  [Server Part] 송지우, 이서연
+ 
 ![django](https://user-images.githubusercontent.com/53477646/152624045-af413cbb-c4f2-41b6-ae27-76f5e6d68412.png)
 
  [Android Part] 양희웅
