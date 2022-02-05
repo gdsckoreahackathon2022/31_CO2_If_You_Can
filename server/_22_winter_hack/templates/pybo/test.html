@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <table class="table">
+        <thead>
+        <tr class="thead-dark">
+            <th>번호</th>
+            <th>act</th>
+            <th>단위</th>
+            <th>탄소배출량</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if list %}
+        {% for act in list %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ act.act }}</td>
+            <td>{{ act.unit }}</td>
+            <td>{{ act.emissions }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="3">질문이 없습니다.</td>
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
