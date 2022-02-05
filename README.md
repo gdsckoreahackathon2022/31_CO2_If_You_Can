@@ -23,5 +23,5 @@
  
  ## 사용 기술 🦋
  [Server Part] 송지우, 이서연
- https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.vlpt.us%2Fimages%2Fswhybein%2Fpost%2F69f12139-1b29-4cea-a8a8-26fec32ed6fa%2Fdjango.png&imgrefurl=https%3A%2F%2Fvelog.io%2F%40swhybein%2Fdjango-%25ED%258A%259C%25ED%2586%25A0%25EB%25A6%25AC%25EC%2596%25BC-part1&tbnid=9XXj0GgeVfQqTM&vet=12ahUKEwjZjfvyt-f1AhUR4WEKHcNGAqMQMygDegUIARC7AQ..i&docid=qf6FSfiXOyTuBM&w=700&h=350&q=django&client=safari&ved=2ahUKEwjZjfvyt-f1AhUR4WEKHcNGAqMQMygDegUIARC7AQ
+
  [Android Part] 양희웅
