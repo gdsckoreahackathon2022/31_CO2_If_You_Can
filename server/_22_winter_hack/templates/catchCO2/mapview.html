@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <style>
+        .label {margin-bottom: 96px;}
+        .label * {display: inline-block;vertical-align: top;}
+        .label .left {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_l.png") no-repeat;display: inline-block;height: 24px;overflow: hidden;vertical-align: top;width: 7px;}
+        .label .center {background: url(https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_bg.png) repeat-x;display: inline-block;height: 24px;font-size: 12px;line-height: 24px;}
+        .label .right {background: url("https://t1.daumcdn.net/localimg/localimages/07/2011/map/storeview/tip_r.png") -1px 0  no-repeat;display: inline-block;height: 24px;overflow: hidden;width: 6px;}
+    </style>
+
+    Name : {{ request.user }}
+
+    <div id="map" style="width:500px;height:400px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b2a3f8297d81d2589be2dd8294e0e5e9"></script>
+    <script>
+        var pos_data = JSON.parse("{{ positions|escapejs }}");
+
+        lats = new Array;
+        lons = new Array;
+        for(_pos in pos_data){
+            console.log(...lats);
+            lats.push(pos_data[_pos].fields.lat);
+            lons.push(pos_data[_pos].fields.lon);
+        }
+
+        var mapContainer = document.getElementById('map'),
+            mapOption = {
+                center: new kakao.maps.LatLng(lats[0], lons[0]),
+                level: 3
+            };
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var linePath = new Array;
+        for(var i = 1; i < lats.length; i++){
+            linePath.push(new kakao.maps.LatLng(lats[i], lons[i]));
+        }
+
+        var polyline = new kakao.maps.Polyline({
+            path: linePath,
+            strokeWeight: 5,
+            strokeColor: '#FFAE00',
+            strokeOpacity: 0.8,
+            strokeStyle: 'solid'
+        });
+
+        polyline.setMap(map);
+
+        var marker_content = '<div class ="label"><span class="left"></span><span class="center"> {{ distance }} kg </span><span class="right"></span></div>';
+        var marker_position = new kakao.maps.LatLng(lats[lats.length - 1], lons[lons.length - 1]);
+        var customOverlay = new kakao.maps.CustomOverlay({
+            position: marker_position,
+            content: marker_content
+        });
+
+        customOverlay.setMap(map);
+
+    </script>
+
+{% endblock %}
