@@ -27,3 +27,5 @@
 ![django](https://user-images.githubusercontent.com/53477646/152624045-af413cbb-c4f2-41b6-ae27-76f5e6d68412.png)
 
  [Android Part] 양희웅
+
+![Unknown](https://user-images.githubusercontent.com/53477646/152624093-49e18d2d-0c4a-41c0-932b-2c0786ba31bb.png)
